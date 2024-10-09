@@ -17,7 +17,7 @@ class EventController extends Controller
 
     function index() {
         // $events = Event::all();
-        $events = Event::orderBy('date')->where('active', 1)->get()->map(function ($event) {
+        $events = Event::orderByDesc('date')->where('active', 1)->get()->map(function ($event) {
             $event->formatted_date = Carbon::parse($event->date)->format('D, M j Y'); // e.g., January 1, 2023
             $event->formatted_time = Carbon::parse($event->start_time)->format('h:i A'); // e.g., 1:00 PM
             return $event;
