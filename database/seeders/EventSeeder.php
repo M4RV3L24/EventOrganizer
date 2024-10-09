@@ -30,7 +30,7 @@ class EventSeeder extends Seeder
         Event::factory()->count(6)->state(new Sequence(
             [
                 'title' => 'Indonesian Innovation Challenge 2024 Powered by Launch Pad',
-                'description' => fake()->text(),
+                'description' => fake()->sentence(100),
                 'date' => "2024-10-23",
                 'start_time' => "09:00:00",
                 'tags' => json_encode(['tag1', 'tag2']),
@@ -45,7 +45,7 @@ class EventSeeder extends Seeder
             ],
             [
                 'title' => 'Kids Education Expo 2024',
-                'description' =>  fake()->text(),
+                'description' =>  fake()->sentence(100),
                 'date' => "2024-10-21",
                 'start_time' => "09:00:00",
                 'tags' => json_encode(['tag3', 'tag2']),
@@ -61,7 +61,7 @@ class EventSeeder extends Seeder
             ],
             [
                 'title' => 'Surabaya Great Expo 2024',
-                'description' => fake()->text(),
+                'description' => fake()->sentence(100),
                 'date' => "2024-10-16",
                 'start_time' => "08:00:00",
                 'tags' => json_encode(['tag1', 'tag2', 'tag4']),
@@ -77,7 +77,7 @@ class EventSeeder extends Seeder
             ],
             [
                 'title' => 'Japan Edu Expo 2024',
-                'description' => fake()->text(),
+                'description' => fake()->sentence(100),
                 'date' => "2024-09-22",
                 'start_time' => "08:00:00",
                 'tags' => json_encode(['tag1', 'tag2', 'tag3', 'tag4']),
@@ -93,7 +93,7 @@ class EventSeeder extends Seeder
             ],
             [
                 'title' => 'SMEX (Surabaya Music, Multimedia, and Lightning Expo) 2024',
-                'description' => fake()->text(),
+                'description' => fake()->sentence(100),
                 'date' => "2024-09-29",
                 'start_time' => "08:00:00",
                 'tags' => json_encode(['tag1', 'tag2', 'tag3', 'tag4']),
@@ -109,7 +109,7 @@ class EventSeeder extends Seeder
             ],
             [
                 'title' => 'Surabaya Hospital Expo 2024',
-                'description' => 'Description for event 1',
+                'description' =>  fake()->sentence(100),
                 'date' => "2024-10-11",
                 'start_time' => "08:00:00",
                 'tags' => json_encode(['tag1', 'tag2', 'tag5', 'tag4']),

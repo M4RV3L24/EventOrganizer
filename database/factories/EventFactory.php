@@ -25,7 +25,7 @@ class EventFactory extends Factory
             'venue' => $this->faker->address(),
             'date' => $this->faker->date(),
             'start_time' => $this->faker->time(),
-            'description' => $this->faker->paragraph(),
+            'description' => $this->faker->sentence(100),
             'booking_url' => $this->faker->url(),
             'tags' => json_encode($this->faker->words(4)),
             'organizer_id' => $this->faker->numberBetween(1, 10),
