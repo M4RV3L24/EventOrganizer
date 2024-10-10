@@ -6,9 +6,9 @@ use App\Http\Controllers\EventController;
 use App\Http\Controllers\OrganizerController;
 use App\Http\Controllers\EventCategoryController;
 
-// Route::get('/', function () {
-//     return view('base');
-// });
+Route::get('/', function () {
+    return redirect()->route('event.list');
+});
 
 
 Route::group(['prefix' => 'event', 'as' => 'event.'], function () {
